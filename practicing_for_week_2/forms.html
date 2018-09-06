@@ -1,0 +1,52 @@
+<!--different types of forms to show the students -->
+
+<!-- basic text inputs with placeholders with all information required -->
+<form action="http://example.com/process-user.php" method="GET">
+  <label for="owner-name">What is the owner's name? </label>
+  <br>
+  <input type="text" name="owner-name" placeholder="owner" required>
+  <br>
+  <label for="dog-name">What is the dog's name?</label>
+  <br>
+  <input type="text" name="dog-name" placeholder="Dog" required>
+  <br>
+  <label for="favorite-toy">What is the dog's favorite toy? </label>
+  <br>
+  <input type="text" name="favorite-toy" placeholder="toy" required>
+  <br>
+  <label for="phone">Phone number</label>
+  <br>
+  <input type="tel" name="phone" placeholder="phone" required>
+
+<!-- radio tickboxes (can only select one) -->
+  <h3>Does your dog get along with other dogs?</h3>
+<input type="radio" name="plays-well-with-others" value="high"> The more dogs, the better!<br>
+<input type="radio" name="plays-well-with-others" value="medium"> It depends on the dog, but generally they are ok<br>
+<input type="radio" name="plays-well-with-others" value="low"> My dog prefers their walkies solo<br>
+
+<!-- checkboxes (can select multiple) -->
+<h3>What are your dogs favorite toys?</h3>
+<input type="checkbox" name="toy-1" value="kong"> Kong <br>
+<input type="checkbox" name="toy-2" value="stuffed-animals">Stuffed Animals<br>
+<input type="checkbox" name="toy-3" value="rope-toys">Rope Toys<br>
+<input type="checkbox" name="toy-4" value="squeaky-toys">Squeaky Toys<br>
+<input type="checkbox" name="toy-5" value="balls">Balls, Frisbees, anything a dog can fetch!<br>
+
+<!-- select (includes dropdown menu) -->
+<h3>What size is your dog?</h3>
+<select name="size">
+  <option value="small" selected>Small(0-25 pounds)</option>
+  <option value="medium">Medium (26-50 pounds)</option>
+  <option value="large">Large (51-75 pounds)</option>
+  <option value="x-large">Extra Large (over 75 pounds)</option>
+</select>
+
+<!-- textarea to include longer notes -->
+<h3>Any other things we should know about your dog?</h3>
+<textarea name="message"></textarea>
+<br>
+
+<!-- submit button -->
+  <input type="submit" value="submit">
+  
+</form>

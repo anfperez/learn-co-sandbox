@@ -1,0 +1,116 @@
+html {
+  /*font-size: 24px;*/
+  background-color: #dedede;
+  font-family: 'Karla', sans-serif;
+}
+
+h1 {
+  font-size: 4em;
+}
+
+ hr {
+  border: 0;
+  height: 2px;
+  background: black;
+ }
+ 
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "left-side right-side";
+}
+
+input {
+  border-color: black;
+  width: 50%;
+  height: 3em;
+}
+
+input[type=text]:focus{
+  outline: 2px solid orange;     /* oranges! yey */
+}
+
+.invitation-options {
+  grid-area: left-side;
+  padding-left: 10%;
+}
+
+.invitation-options input {
+  margin: 0px
+}
+
+.style-text {
+  display: inline-block;
+  font-size: 1.25em;
+  padding-right: 2em;
+}
+
+#invitation-display {
+  grid-area: right-side;
+  height: 100vh;
+  padding-top: 3.5em;
+}
+
+#invitationText {
+  text-align: center;
+}
+
+#initials div {
+  display: inline-block;
+  font-size: 5em;
+}
+
+#names div {
+  display: inline-block;
+  font-size: 3em;
+}
+
+#invitationLastName {
+  font-size: 3em;
+  padding-bottom: 1em;
+}
+
+#inviteText {
+  font-size: 1em;
+  padding-top: .5em;
+  padding-bottom: .5em;
+}
+
+#invitationDate, #invitationLocation {
+  font-size: 2em;
+  padding-bottom: .5em;
+}
+
+.style-cateredaffair {
+  background-image: url("http://www.thecityofmiltonwv.com/g/2018/07/rhaboutplanningorg-for-blank-wedding-invitation-templates-microsoft-word-rhaboutplanningorg-download-free-fresh-rhcomparecloudco-download-blank-wedding.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  font-family: 'Lobster', cursive;
+  transition: all 0.5s;
+}
+
+.style-idoido {
+  background-image: url("http://itchyfeetravel.com/wp-content/uploads/2018/03/blank-wedding-invitations-with-a-fascinating-invitations-specially-designed-for-your-Wedding-Invitation-Templates-16.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  font-family: 'Mystery Quest', cursive;
+  transition: all 0.5s;
+}
+
+.style-sweeneytodd {
+  background-image: url("http://southbayrobot.com/wp-content/uploads/2018/08/blank-wedding-invitation-templates-printable-invitations-82-free-psd-vector-ai-eps-format.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  font-family: 'Trade Winds', cursive;
+  transition: all 0.5s;
+  padding-top: 1em;
+}
+
+.style-sweeneytodd #invitationText {
+  padding-top: 5em;
+}
+
+button {
+  width: 50%;
+  height: 3em;
+}

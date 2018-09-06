@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/css?family=Lobster|Mystery+Quest|Trade+Winds|Karla" rel="stylesheet">
+    
+
+    
+    <title>Wedding Invitation Designer</title>
+    <meta charset="UTF-8"/> 
+  </head> 
+   <body>
+     <header>
+       <center><h1>Wedding Invitation Designer</h1></center>
+     </header>
+     
+     <div class="wrapper">
+      <section>
+        <div class = "invitation-options">
+          <div class="style-options">
+            <div class="style-text" id="catered-affair">A Catered Affair</div>
+            <div class="style-text" id="ido-ido">I Do! I Do!</div>
+            <div class="style-text" id ="sweeney-todd">Sweeney Todd</div>
+          </div>
+          <hr width="85%" align="left">
+          <label for="firstName">1st Name:</label><br>
+          <input type="text" id="firstName">
+          <p></p>
+          <label for="secondName">2nd Name:</label><br>
+          <input type="text" id="secondName">
+          <p></p>
+          <label for="lastName">Last Name:</label><br>
+          <input type="text" id="lastName">
+          <p></p>
+          <label for="weddingDate">Date:</label><br>
+          <input type="text" id="weddingDate">
+          <p></p>
+          <label for="weddingLocation">Wedding Location:</label><br>
+          <input type="text" id="weddingLocation">
+          <p></p>
+          <button id="goButton">Convert Invitation to Image</button>
+        </div>
+      </section>
+      <section>
+          <div id="invitation-display" class="style-cateredaffair" >
+            <div id="invitationText">
+              <div id="initials">
+                <div id="firstInitial"></div>
+                  <div id="initial-ampersand"></div>
+                <div id="secondInitial"></div>
+              </div>
+              <div id ="inviteText"></div>
+              <div id="names">
+                <div id="invitationFirstName"></div>
+                  <div id="name-ampersand"></div>
+                <div id="invitationSecondName"></div>
+              </div>
+              <div id="invitationLastName"></div>
+              <div id="invitationDate"></div>
+              <div id="invitationLocation"></div>
+            </div>
+          </div>
+      </section>
+    
+    <!-- for screenshot -->
+
+      <div id="image"></div>
+    
+    </div>
+    
+    
+    <script src="index.js" type="text/javascript"></script>
+    
+    <!-- for screenshot -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.5.0-beta4/html2canvas.js"></script>
+
+  </body>
+</html>
